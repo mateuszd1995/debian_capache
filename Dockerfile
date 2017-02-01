@@ -1,6 +1,6 @@
 FROM library/debian
 MAINTAINER Mateusz Aleksander Duda <mateo.duda@hotmail.com>
-apt-get update && \
+RUN apt-get update && \
 apt-get upgrade &&\
 apt-get install -y apache2 &&\ 
 rm -rf /var/www/html/* && \
