@@ -1,6 +1,5 @@
 FROM library/debian
 MAINTAINER Mateusz Aleksander Duda <mateo.duda@hotmail.com>
-RUN echo "nameserver 10.27.100.1" > /etc/resolv.conf && \
 apt-get update && \
 apt-get upgrade &&\
 apt-get install -y apache2 &&\ 
